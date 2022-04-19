@@ -1,0 +1,27 @@
+@import "colors";
+@import "typography";
+@import "utilities";
+@import "media-queries";
+
+@import "advice-container";
+@import "advice-content";
+@import "attribution";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  background-color: $dark-blue;
+  color: #fff;
+  height: 100vh;
+}
+
+.display-container {
+  @include display-flex-center;
+  height: 100%;
+}

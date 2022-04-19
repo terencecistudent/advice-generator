@@ -1,0 +1,15 @@
+.advice-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 33.75rem;
+  background-color: $dark-grayish-blue;
+  border-radius: 0.9375rem;
+}
+
+@include tablet {
+  .advice-container {
+    max-width: -webkit-fill-available;
+    margin: 0 1.5rem;
+  }
+}

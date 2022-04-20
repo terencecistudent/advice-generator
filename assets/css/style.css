@@ -27,6 +27,10 @@
   letter-spacing: 0.3125rem;
 }
 
+.advice-id-span {
+  margin-left: -0.425rem;
+}
+
 .advice-text {
   text-align: center;
   color: #cee3e9;

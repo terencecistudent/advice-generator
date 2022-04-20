@@ -21,7 +21,6 @@ async function generateAdvice() {
   }
   catch(error) {
     // console.error(`Could not get products: ${error}`);
-    // adviceDescription.textContent = `${error}`;
     adviceDescription.textContent = "Unable to retrieve quote.";
   }  
 }

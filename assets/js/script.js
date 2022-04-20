@@ -13,19 +13,16 @@ async function generateAdvice() {
   try {
     const response = await fetch(`https://api.adviceslip.com/advice/${generateFunc()}`);
     if (!response.ok) {
-      throw new Error(`HTTP error: ${response.status}`);
+      throw new Error(`Could not get quote.`);
     }
     const json = await response.json();
     adviceId.textContent += json.slip.id;
-    adviceDescription.textContent += `${json.slip.advice}`;
-
-    if (adviceId === "") {
-      console.log("empty sorry");
-    }
+    adviceDescription.textContent += `"${json.slip.advice}"`;
   }
   catch(error) {
     // console.error(`Could not get products: ${error}`);
-    adviceDescription.textContent = `Could not get quote: ${error}`;
+    // adviceDescription.textContent = `${error}`;
+    adviceDescription.textContent = "Unable to retrieve quote.";
   }  
 }
 

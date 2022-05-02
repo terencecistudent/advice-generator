@@ -6,7 +6,7 @@ let genertateBtn = document.querySelector("#generate");
 const generateFunc = () => {
   adviceId.textContent = "";
   adviceDescription.textContent = "";
-  return Math.floor(Math.random() * 224);
+  return Math.floor(Math.random() * 224) + 1;
 };
 
 async function generateAdvice() {
